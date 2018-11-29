@@ -1,7 +1,7 @@
 // START HEROKU SETUP
 var express = require("express");
 var app = express();
-app.get('/', function(req, res){ res.send('The robot is happily running.'); });
+app.get('/', function(req, res){ res.send('The robot is happily running. Go to: https://www.twitter.com/critcosplaybot to see!'); });
 app.listen(process.env.PORT || 5000);
 // END HEROKU SETUP
 
