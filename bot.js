@@ -17,7 +17,6 @@ Twitter.get('search/tweets', params, function(err, data, response) {
                 Twitter.post('statuses/retweet/:id', {id: tweet.id_str}, function(err, response) { //retweet tweet
                     if (err) { //if duplicate tweet, error found
                         console.log(err.message);
-                        continue; //find new tweet
                     } else {
                         let username = response.user.screen_name;
                         let tweetId = response.id_str;
